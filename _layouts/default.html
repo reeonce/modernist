@@ -36,13 +36,11 @@
 
       {{ content }}
 
+      {% if site.disqus.shortname and page.comments %}
+        {% include disqus.html %}
+      {% endif %}
       </section>
     </div>
-
-
-    {% if site.disqus.shortname and page.comments %}
-      {% include disqus.html %}
-    {% endif %}
     
     <footer>
     {% if site.github.is_project_page %}
