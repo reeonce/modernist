@@ -27,6 +27,9 @@
           <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
           <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
         {% endif %}
+        {% for nav_item in site.nav_items %}
+        <li><a href="{{ nav_item.path }}"><strong>{{ nav_item.title }}</strong></a></li>
+        {% endfor %}
         </ul>
       </header>
       <section>
@@ -35,6 +38,12 @@
 
       </section>
     </div>
+
+
+    {% if site.disqus.shortname and page.comments %}
+      {% include disqus.html %}
+    {% endif %}
+    
     <footer>
     {% if site.github.is_project_page %}
       <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
