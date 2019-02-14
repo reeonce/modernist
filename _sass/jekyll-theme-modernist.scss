@@ -50,7 +50,7 @@ header {
   padding:15px 20px;
   border-bottom:1px solid #B2D2E1;
 
-  h1 {
+  h2 {
     margin:0;
     padding:0;
     font-size:24px;
@@ -59,7 +59,7 @@ header {
     text-shadow:rgba(#fff, 0.9) 0 1px 0;
   }
 
-  &.without-description h1 {
+  &.without-description h2 {
     margin:10px 0;
   }
 
@@ -91,7 +91,7 @@ header {
     list-style:none;
     position:absolute;
     z-index:1;
-    right:20px;
+    right:16px;
     top:20px;
     height:38px;
     padding:1px 0;
@@ -115,7 +115,7 @@ header {
     }
 
     li {
-      width:79px;
+      width:73px;
       float:left;
       border-right:1px solid #3A7CBE;
       height:38px;
@@ -126,13 +126,13 @@ header {
     }
 
     li + li {
-      width:78px;
+      width:72px;
       border-left:1px solid #8BBEF3;
     }
 
     li + li + li {
       border-right:none;
-      width:79px;
+      width:73px;
     }
 
     a {
@@ -309,10 +309,6 @@ footer {
 }
 
 @media print, screen and (max-width:580px) {
-  header ul {
-    display:none;
-  }
-
   header p.view {
     display:block;
   }
