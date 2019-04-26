@@ -217,15 +217,15 @@ pre {
   padding:20px;
   background: #3A3C42;
   color:#f8f8f2;
-  margin:0 -20px 20px;
+  margin:0;
 
   code {
     color:#f8f8f2;
   }
 
   li & {
-    margin-left:-60px;
-    padding-left:60px;
+    margin-left:-40px;
+    padding-left:40px;
   }
 }
 
