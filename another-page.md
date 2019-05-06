@@ -1,8 +1,9 @@
 ---
 layout: default
+title: Welcome to another page
 ---
 
-## Welcome to another page
+### here is another page
 
 _yay_
 
